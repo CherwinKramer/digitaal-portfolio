@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Cherwin's portofolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="files/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div id="top">
+                <div id="topbar">HTML opdracht 7</div>
+                <div id="topheader"> <h1>Ckramer</h1> </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Over mij</a></li>
+                        <li><a href="">Studies</a></li>
+                        <li><a href="">Portofolio</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="slideshow-container">
+                   
+                <div class="mySlides fade">
+                    <img src="files/headerback.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="files/headerback2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="files/headerback3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="files/headerback4.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="files/headerback5.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                        <img src="files/headerback6.jpg" style="width:100%">
+                </div>
+                        
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+        </header>
+
+        <main>
+            <h1> Mijn digitale portofolio </h1>
+            <article>
+                <p>Mijn naam is Cherwin Giovanni Kramer geboren op 3 augustus 1999 te Zwijndrecht.<br>
+                    Ik ben momenteel bezig met de opleiding Applicatie Ontwikkelaar (MBO niv. 4) en heb het toekomstplan om hierna de HBO opleiding 'Informatica' te volgen en hierdoor Software-engineer te worden.
+                    Software-engineer is simpel gezegd ontwikkelaar van applicaties of systemen.</p>
+                
+                <p>Op mijn web-pagina wordt mijn portofolio (curriculum vitae) bijgehouden en is alles te vinden over zowel mij als persoon als mijn studies en ervaringen.
+                    In mijn portofolio zijn ook verscheidene projecten van mij te vinden.
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            <section class="footer-top">
+                <div class="vertical-text">
+                    <p>Social media</p>
+                </div>
+                <div class="social-media">
+                    <div class="social-list">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-steam-square fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="footer-copyright">
+                    <i class="fa fa-copyright" aria-hidden="true"></i> <p>Cherwin Giovanni Kramer</p>
+                </div>
+            </section>
+        </footer>
+    </body>
+    <script>
+        var slideIndex = 0;
+        showSlides(); 
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 10000); // time-out * 1000
+        }
+    </script>
+</html>
