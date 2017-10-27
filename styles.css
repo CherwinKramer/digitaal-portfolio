@@ -4,12 +4,12 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-#top{
+#hometop{
     z-index: 9999;
     position: absolute;
     width: 100%;
 }
-#topbar{
+#hometopbar{
     height: 30px;
     width: 100%;
     background: #313131;
@@ -18,7 +18,51 @@
     padding-top: 6px;
     padding-right: 100px;
 }
-#topheader{
+#hometopheader{
+    background-color: rgba(27, 27, 27, 0.75);
+    height: 100px;
+    width: 100%;
+}
+#wiebenik{
+    float: right;
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#defensie{
+    margin: 10px auto 0px auto;
+    border-radius: 20px;
+    display: block;
+    width: auto;
+    height: auto;
+}
+img{
+    height: 565px;
+    border-bottom: solid 1px black;
+}
+.img{
+    height: auto;
+    border-radius: 10px;
+    float: left;
+    width: 180px;
+    margin-right: 10px;
+    border: none;
+}
+.top{
+    width: 100%;
+    background-image: url("files/header.jpg");
+}
+.topbar{
+    height: 30px;
+    width: 100%;
+    background: #313131;
+    color: white;
+    text-align: right;
+    padding-top: 6px;
+    padding-right: 100px;
+}
+.topheader{
     background-color: rgba(27, 27, 27, 0.75);
     height: 100px;
     width: 100%;
@@ -29,18 +73,30 @@ header h1{
     color: white;
     font-weight: 10px;
 }
-main{
+main h1:first-child{
     margin-top: 80px;
 }
 main h1{
+    margin-top: 30px;
     font-family: Courier New, Courier, monospace;
     text-align: center;
+}
+main article p a{
+    text-decoration: none;
+    color: #4D4D4D;
 }
 main article{
     width: 80%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin: 50px auto 0px auto;
+}
+main h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+ul li h3{
+    display: inline;
 }
 
 footer{
@@ -55,11 +111,31 @@ footer{
 }
 .social-media{
     display: inline-block;
-    position: relative;
+    position: absolute;
     height: 120px;
     width: 120px;
     margin-left: 50px;
     background-color: #333;
+}
+.footer-contact{
+    position: absolute;
+    font-size: 25px;
+    top: 47.5px;
+    right:225px;
+    transform: rotate(270deg);
+}
+.contact{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    height: 120px;
+    width: 250px;
+    background: #333;
+}
+.contact ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 14px 14px;
 }
 .social-media .social-list{
     display: flex;
@@ -126,6 +202,12 @@ nav li a{
     text-decoration: none;
     border-left: 1px groove black;
 }
+nav li a:hover{
+    background: #383838;
+}
+.portfolio:hover{
+    /**/
+}
 nav li:last-child{
     border-right: 1px groove black;
 }
@@ -174,9 +256,9 @@ nav li:last-child{
     }
     .fade {
       -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
+      -webkit-animation-duration: 2s;
       animation-name: fade;
-      animation-duration: 1.5s;
+      animation-duration: 2s;
     }
     @-webkit-keyframes fade {
       from {opacity: .4} 
@@ -186,10 +268,103 @@ nav li:last-child{
       from {opacity: .4} 
       to {opacity: 1}
       }
-    img{
-        height: 565px;
-        border-bottom: solid 1px black;
-    }
     @media only screen and (max-width: 300px) {
       .text {font-size: 11px}
     }
+
+    /* Media files */
+@media screen and (max-width: 850px) {
+    
+    #defensie{
+        width: 400px;
+    }
+    nav li:first-child{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 700px){
+    body{
+        background-color: #BFBFBF;
+    }
+    
+    nav li a{
+        padding: 16.2px 5px;
+    }
+}
+@media screen and (max-width: 600px){
+    #wiebenik{
+        width: 300px;
+    }
+}
+@media screen and (max-width:460px){
+    h2{
+        font-size: 0.9em;
+    }
+    ul li{
+        font-size: 0.8em;
+    }
+    body{
+        background-color: #989898;
+    }
+    main{
+        font-size: 0.8em;
+    }
+    main p{
+        font-size: 0.8em;
+    }
+    main article{
+        margin-top: 10px;
+    }
+    nav li {
+        float: none;
+        border-style: none;
+    }
+    nav{
+        background: #313131;
+        height: 35px;
+        width: 100%;
+    }
+    nav li a{
+        padding: 10px 5px;
+    }
+    main{
+        margin-top: 200px;
+    }
+    .vertical-text p{
+        display: none;
+    }
+    .social-media{
+        display: none;
+    }
+    header h1{
+        padding: 15px 0px 15px 15px;
+        font-size: 60px;
+    }
+    #wiebenik{
+        width: 250px;
+    }
+    .img{
+        float: none;
+        display: block;
+        width: 250px;
+    }
+    #defensie{
+        width: 240px;
+    }
+    .slideshow-container{
+        display: none;
+    }
+    .myslides{
+        display: none;
+    }
+    #hometop{
+        position: static;
+        background-image: url("files/header.jpg");
+    }
+    nav li a{
+        border: none;
+    }
+    nav li:first-child{
+        margin: 0;
+    }
+}
