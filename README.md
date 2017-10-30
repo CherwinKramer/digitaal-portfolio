@@ -14,7 +14,7 @@ Wie ben ik - deel 2 moet aan de volgende functionele eisen voldoen:
  <!-- * een pagina over "wie ben ik" inclusief je hobbies (met foto's); -->
 <!-- * Jouw portfolio bevat een pagina "beroep.html" over het beroep waarvoor je opgeleid wordt (jouw toekomstbeeld);
 * Jouw portfolio is goed te bekijken op een smartphone (*); -->
-* Jouw portfolio is op internet opvraagbaar;
+<!-- * Jouw portfolio is op internet opvraagbaar; -->
 <!-- * Je hebt, na het op internet zetten, alle links op alle pagina's getest; -->
 
 ### Technische eisen

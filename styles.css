@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
+/* Header */
 #hometop{
     z-index: 9999;
     position: absolute;
@@ -23,6 +24,103 @@
     height: 100px;
     width: 100%;
 }
+.top{
+    width: 100%;
+    background-image: url("files/header.jpg");
+}
+.topbar{
+    height: 30px;
+    width: 100%;
+    background: #313131;
+    color: white;
+    text-align: right;
+    padding-top: 6px;
+    padding-right: 100px;
+}
+.topheader{
+    background-color: rgba(27, 27, 27, 0.75);
+    height: 100px;
+    width: 100%;
+}
+header h1{
+    font-size: 70px;
+    padding: 15px 0px 15px 150px;
+    color: white;
+    font-weight: 10px;
+}
+/* Navigastie bar */
+
+nav{
+    background: #313131;
+    height: 50px;
+    width: 100%;
+}
+.dropdown{
+    display: none;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+.show{
+    display: block;
+}
+.dropbtn{
+    display: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+    height: 35px;
+    width: 80px;
+}
+.dropbtn:hover, .dropbtn:focus{
+    background-color: #0C0C0C;
+}
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+nav li {
+    float: left;
+}
+nav li:first-child{
+    margin-left: 155px;
+}
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16.2px 25px;
+    text-decoration: none;
+    border-left: 1px groove black;
+}
+nav li a:hover{
+    background: #383838;
+}
+nav li:last-child{
+    border-right: 1px groove black;
+}
+/* Images */
+
 #wiebenik{
     float: right;
     height: auto;
@@ -49,30 +147,7 @@ img{
     margin-right: 10px;
     border: none;
 }
-.top{
-    width: 100%;
-    background-image: url("files/header.jpg");
-}
-.topbar{
-    height: 30px;
-    width: 100%;
-    background: #313131;
-    color: white;
-    text-align: right;
-    padding-top: 6px;
-    padding-right: 100px;
-}
-.topheader{
-    background-color: rgba(27, 27, 27, 0.75);
-    height: 100px;
-    width: 100%;
-}
-header h1{
-    font-size: 70px;
-    padding: 15px 0px 15px 150px;
-    color: white;
-    font-weight: 10px;
-}
+/* Body / main */
 main h1:first-child{
     margin-top: 80px;
 }
@@ -98,6 +173,7 @@ main h2{
 ul li h3{
     display: inline;
 }
+/* footer */
 
 footer{
     margin-top: 100px;
@@ -175,43 +251,6 @@ footer{
     margin-right: 50px;
 }
 
-/* Navigastie bar */
-
-nav{
-    background: #313131;
-    height: 50px;
-    width: 100%;
-}
-nav ul{
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #333;
-    width: 100%;
-}
-nav li {
-    float: left;
-}
-nav li:first-child{
-    margin-left: 155px;
-}
-nav li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16.2px 25px;
-    text-decoration: none;
-    border-left: 1px groove black;
-}
-nav li a:hover{
-    background: #383838;
-}
-.portfolio:hover{
-    /**/
-}
-nav li:last-child{
-    border-right: 1px groove black;
-}
-
 /* Slide show */
 
 .mySlides {
@@ -284,7 +323,7 @@ nav li:last-child{
 }
 @media screen and (max-width: 700px){
     body{
-        background-color: #BFBFBF;
+        background-color: #E6E6E6;
     }
     
     nav li a{
@@ -300,11 +339,14 @@ nav li:last-child{
     h2{
         font-size: 0.9em;
     }
-    ul li{
-        font-size: 0.8em;
+    nav ul li{
+        display: none;
     }
-    body{
-        background-color: #989898;
+    .dropbtn{
+        display: block;
+    }
+    .dropdown{
+        display: block;
     }
     main{
         font-size: 0.8em;
@@ -327,9 +369,6 @@ nav li:last-child{
     nav li a{
         padding: 10px 5px;
     }
-    main{
-        margin-top: 200px;
-    }
     .vertical-text p{
         display: none;
     }
@@ -341,6 +380,9 @@ nav li:last-child{
         font-size: 60px;
     }
     #wiebenik{
+        margin: 0;
+        float: none;
+        display: block;
         width: 250px;
     }
     .img{
@@ -348,7 +390,8 @@ nav li:last-child{
         display: block;
         width: 250px;
     }
-    #defensie{
+    img#defensie{
+        float: none;
         width: 240px;
     }
     .slideshow-container{
